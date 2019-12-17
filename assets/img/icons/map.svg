@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Final-Template" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0-Search" transform="translate(-708.000000, -849.000000)" fill="#38AA9D" fill-rule="nonzero">
+            <g id="Group-8" transform="translate(165.000000, 462.000000)">
+                <g id="Group-6" transform="translate(0.000000, 186.000000)">
+                    <g id="location" transform="translate(543.000000, 201.000000)">
+                        <path d="M11.72,0 L11.7199995,0 C5.24721949,0 -5.12296999e-07,5.24722 -5.12296999e-07,11.72 C-5.12296999e-07,11.72 -5.12296999e-07,11.72 -5.12296999e-07,11.72 C-5.12296999e-07,19.88 10.7699995,30 11.7199995,30 C12.6699995,30 23.4399995,19.88 23.4399995,11.72 L23.4399995,11.72 C23.4399995,5.24722 18.1927795,0 11.7199995,0 L11.72,0 Z M11.7199998,16.72 L11.7199998,16.72 C8.95857978,16.72 6.71999978,14.48142 6.71999978,11.72 C6.71999978,8.95858 8.95857978,6.72 11.7199998,6.72 C14.4814198,6.72 16.7199998,8.95858 16.7199998,11.72 L16.7199998,11.72 C16.7199998,14.4814198 14.4814198,16.72 11.7199998,16.72 L11.7199998,16.72 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

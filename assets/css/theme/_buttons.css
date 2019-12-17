@@ -1,0 +1,5 @@
+.btn-primary {
+  background-image: -webkit-linear-gradient(225deg, #24C790 0%, #38A89D 100%);
+  background-image: -o-linear-gradient(225deg, #24C790 0%, #38A89D 100%);
+  background-image: linear-gradient(225deg, #24C790 0%, #38A89D 100%);
+  border-radius: 6px; }

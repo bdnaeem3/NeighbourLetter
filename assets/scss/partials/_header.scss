@@ -1,0 +1,12 @@
+
+header {
+  background: $white;
+  @include boxShadow;
+}
+
+.logo {
+  margin-right: 30px;
+  padding: 19px 0;
+  position: relative;
+  top: -3px;
+}

@@ -1,0 +1,820 @@
+// -------------------------------------------------- Banner Section --------------------
+
+#banner {
+  position: relative;
+  @include background('bg/banner.png', no-repeat, bottom);
+
+  form {
+    position: relative;
+    max-width: 445px;
+    background: $white;
+    border-radius: 8px;
+    border: 1px solid $lightBorder;
+    padding: 15px;
+    margin: 50px auto 0;
+    z-index: 1;
+    @include boxShadow;
+
+    @media (max-width: 767px) {
+      margin: 20px 10px 0;
+    }
+
+    button {
+      width: calc(100% - 30px);
+      margin: 30px 15px 15px;
+    }
+  }
+}
+
+.banner {
+  h2 {
+    padding-top: 60px;
+    letter-spacing: -0.6px;
+
+    @media (max-width: 767px) {
+      padding-top: 20px;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $primaryColor;
+    margin-top: 7px;
+  }
+}
+
+.property-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 99px 0 32px;
+
+  img {
+    display: table;
+    max-width: 1368px;
+    margin: 0 auto;
+
+    @media (max-width: 1367px) {
+      max-width: 100%;
+    }
+  }
+}
+
+// -------------------------------------------------- Features Section --------------------
+
+.features {
+  padding: 120px 0;
+
+  @media (max-width: 767px) {
+    padding: 50px 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.416;
+    max-width: 600px;
+    margin: 0 auto 68px;
+    text-align: center;
+    color: $primaryColor;
+    @include bold;
+
+    @media (max-width: 767px) {
+      margin: 0 auto 50px;
+    }
+  }
+
+  ul {
+    border: 1px solid $lightBorder;
+    border-radius: 8px;
+    overflow: hidden;
+    @include boxShadow;
+
+    li {
+      width: 33.33%;
+      float: left;
+      text-align: center;
+      padding: 25px;
+      min-height: 180px;
+      cursor: pointer;
+      border-right: 1px solid rgba(56, 170, 157, .15);
+      border-bottom: 1px solid rgba(56, 170, 157, .15);
+
+      @media (max-width: 991px) {
+        width: 50%;
+      }
+
+      @media (max-width: 767px) {
+        min-height: 205px;
+      }
+
+      @media (max-width: 575px) {
+        width: 100%;
+        min-height: initial;
+      }
+
+      br {
+
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        border-bottom: none;
+
+        @media (max-width: 991px) {
+          border-bottom: 1px solid rgba(56, 170, 157, .15);
+        }
+      }
+
+      &:nth-child(3),
+      &:nth-child(6) {
+        border-right: none;
+
+        @media (max-width: 991px) {
+          border-right: 1px solid rgba(56, 170, 157, .15);
+        }
+      }
+
+      &:hover {
+        color: $white;
+        @include gradientBg;
+
+        svg {
+          color: $white;
+
+          .bulb {
+            fill: $secondaryColor;
+          }
+        }
+      }
+
+      svg {
+        color: $border;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+// -------------------------------------------------- What is this Section --------------------
+
+.what-is-this {
+
+  p {
+    margin-top: 10px;
+    @include lightPrimaryText;
+
+    em {
+      font-size: 1.125rem;
+      line-height: 1.555;
+      margin-bottom: 25px;
+      display: table;
+      @include bold;
+    }
+  }
+}
+
+.what-is-this-img {
+  margin-top: 55px;
+  width: 627px;
+  max-width: 627px;
+  
+  @media (max-width: 1299px) {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  @media (max-width: 991px) {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.about-btn-wrapper {
+  max-width: 277px;
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: 991px) {
+    margin: 35px auto 40px;
+  }
+
+  p {
+    margin-top: 15px;
+    color: $primaryColor;
+  }
+}
+
+// -------------------------------------------------- Why should do section --------------------
+
+#why-should-do {
+  @include background('bg/why-should-do.png', no-repeat, top);
+  padding: 220px 0 60px;
+
+  @media (max-width: 767px) {
+    background-position: left;
+    padding: 50px 0;
+  }
+}
+
+.why-should-do {
+
+  p {
+    @include lightPrimaryText;
+
+    em {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      display: table;
+    }
+  }
+
+  img {
+    max-width: 426px;
+    margin: 45px auto;
+    display: table;
+
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+
+  li {
+    background: $white;
+    border: 1px solid $lightBorder;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+    @include boxShadow;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    span {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      font-size: .8rem;
+      border-radius: 50%;
+      color: $white;
+      min-width: 25px;
+      margin-right: 20px;
+      @include gradientBg;
+
+      @media (max-width: 575px) {
+        position: absolute;
+        top: -12px;
+        left: -10px;
+      }
+    }
+  }
+}
+
+// -------------------------------------------------- Note section --------------------
+
+#note {
+  @include background('bg/note.png');
+  padding: 120px 0;
+
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    line-height: 1.4;
+    @include bold;
+
+    @media (max-width: 767px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  p {
+    margin-top: 15px;
+  }
+}
+
+// -------------------------------------------------- What you get section --------------------
+
+.what-you-get {
+  padding: 125px 0 90px;
+
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  ul {
+    overflow: hidden;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 33.33%;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    min-height: 206px;
+    padding: 30px 15px 0;
+    @include lightRightBorder;
+    @include lightBottomBorder;
+
+    @media (max-width: 991px) {
+      width: 50%;
+      min-height: 207px !important;
+    }
+
+    @media (max-width: 767px) {
+      width: 100%;
+      border-right: none !important;
+      min-height: initial !important;
+      padding: 15px 0 !important;
+    }
+
+    &:nth-child(even) {
+
+      @media (max-width: 991px) {
+        border-right: none !important;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(9) {
+      border-right: none;
+    }
+
+    &:nth-child(9),
+    &:nth-child(3) {
+
+      @media (max-width: 991px) {
+        padding-top: 30px !important;
+        @include lightRightBorder;
+      }
+
+      @media (max-width: 767px) {
+        padding-top: 15px !important;
+      }
+    }
+
+    &:nth-child(7),
+    &:nth-child(8),
+    &:nth-child(9) {
+      border-bottom: none;
+    }
+
+    &:nth-child(7),
+    &:nth-child(8) {
+
+      @media (max-width: 991px) {
+        @include lightBottomBorder;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-top: 0;
+      min-height: 176px;
+      
+      @media (max-width: 1199px) {
+        min-height: 203px;
+      }
+
+      @media (max-width: 767px) {
+        padding-top: 15px;
+      }
+    }
+
+    div {
+      margin-top: 7px;
+    }
+
+    p {
+      @include lightPrimaryText;
+    }
+  }
+
+  h4 {
+    color: $secondaryColor;
+    font-size: 1.1rem;
+    line-height: 1.39;
+    margin-bottom: 15px;
+    @include bold;
+  }
+}
+
+.what-you-get-img {
+  margin: 0 25px 0 16px;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 12px;
+
+  @media (max-width: 767px) {
+    margin: 0 20px 0 0;
+  }
+}
+
+.no-wasted-time {
+  background-image: linear-gradient(222deg, #0AAEDF 0%, #3AFA91 100%);
+  box-shadow: 0 4px 8px 0 rgba(46,231,165,0.50);
+  border-radius: 12px;
+}
+
+.no-data-formatting {
+  background-image: linear-gradient(222deg, #0746FB 0%, #70DEFA 100%);
+  box-shadow: 0 4px 8px 0 rgba(94,197,250,0.50);
+  border-radius: 12px;
+}
+
+.no-messing-around {
+  background-image: linear-gradient(222deg, #FFD982 0%, #FD085B 100%);
+  box-shadow: 0 4px 8px 0 rgba(254,53,100,0.50);
+  border-radius: 12px;
+}
+
+.the-best-letters {
+  background-image: linear-gradient(222deg, #0746FB 0%, #C065FF 100%);
+  box-shadow: 0 4px 8px 0 rgba(158,95,254,0.50);
+  border-radius: 12px;
+}
+
+.no-reliance-on-vas {
+  background-image: linear-gradient(225deg, #24C790 0%, #38A89D 100%);
+  box-shadow: 0 4px 8px 0 rgba(51,176,154,0.50);
+  border-radius: 12px;
+}
+
+.faster-sale {
+  background-image: linear-gradient(225deg, #00D4FF 1%, #0090D8 100%);
+  box-shadow: 0 4px 8px 0 rgba(0,160,225,0.50);
+  border-radius: 12px;
+}
+
+.faster-mailing {
+  background-image: linear-gradient(222deg, #0AAEDF 0%, #3AFA91 100%);
+  box-shadow: 0 4px 8px 0 rgba(46,231,165,0.50);
+  border-radius: 12px;
+}
+
+.everything-at-one-place {
+  background-image: linear-gradient(222deg, #FFD982 0%, #FD085B 100%);
+  box-shadow: 0 4px 8px 0 rgba(254,53,100,0.50);
+  border-radius: 12px;
+}
+
+.done-for-you {
+  background-image: linear-gradient(222deg, #0746FB 0%, #C065FF 100%);
+  box-shadow: 0 4px 8px 0 rgba(158,95,254,0.50);
+  border-radius: 12px;
+}
+
+// -------------------------------------------------- How it work section --------------------
+
+#how-it-work {
+  @include background('bg/how-it-work.png', no-repeat, bottom);
+  padding: 150px 0 390px;
+
+  @media (max-width: 991px) {
+    padding: 150px 0;
+  }
+
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+}
+
+.flow-line {
+  max-width: 1369px;
+  margin-top: 30px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 46px;
+    top: 46px;
+    height: calc(100% - 126px);
+    border-right: 2px dashed #38AA9D;
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+    
+    @media (max-width: 767px) {
+      left: 30px;
+    }
+  }
+
+  > img {
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}
+
+.how-it-work {
+  li {
+    position: absolute;
+    width: 284px;
+
+    @media (max-width: 991px) {
+      position: relative;
+      top: 0 !important;
+      left: 0 !important;
+      display: flex;
+      width: 100%;
+      max-width: 430px;
+      margin-bottom: 50px;
+      z-index: 1;
+    }
+
+    div:last-child {
+      margin-top: 50px;
+
+      @media (max-width: 991px) {
+        margin-top: 0;
+      }
+    }
+
+    &:first-child {
+      display: flex;
+      flex-direction: column-reverse;
+      top: 7%;
+      left: 0;
+
+      @media (max-width: 991px) {
+        flex-direction: row;
+      }
+
+      div {
+        margin-top: 50px;
+
+        @media (max-width: 991px) {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      top: 13%;
+      left: 35%;
+    }
+
+    &:nth-child(3) {
+      top: -4%;
+      left: 66%;
+      min-width: 294px;
+
+      p {
+        font-size: .75rem;
+        height: 41px;
+        line-height: 41px;
+        background: $white;
+        padding: 0 8px 0 12px;
+        box-shadow: 0 2px 18px 0 rgba(10,75,69,0.08);
+        border-radius: 4px;
+        display: table;
+        float: left;
+        margin-right: 12px;
+        @include bold;
+      }
+    }
+
+    &:nth-child(4) {
+      top: 41%;
+      left: 67%;
+    }
+
+    &:nth-child(5) {
+      top: 50%;
+      left: 29%;
+    }
+
+    &:nth-child(6) {
+      top: 81%;
+      left: 5%;
+    }
+
+    &:last-child {
+      top: 96%;
+      left: 54%;
+
+      @media (max-width: 991px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  h4 {
+    color: $primaryColor;
+    font-size: 1.37rem;
+    line-height: 1.4;
+    @include bold;
+  }
+
+  p {
+    color: $primaryColor;
+    font-size: 1.125rem;
+    line-height: 1.555;
+    margin-top: 15px;
+  }
+}
+
+.flow-img {
+  width: 92px;
+  height: 92px;
+  background: white;
+  line-height: 92px;
+  text-align: center;
+  box-shadow: 0 40px 50px 0 rgba(56,170,157,0.12);
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-right: 25px;
+
+  @media (max-width: 767px) {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  img {
+
+    @media (max-width: 767px) {
+      max-width: 45px;
+      max-height: 45px;
+    }
+  }
+}
+
+// -------------------------------------------------- Notice section --------------------
+
+.notice {
+  padding: 100px 0;
+
+  @media (max-width: 767px) {
+    padding: 60px 0;
+  }
+
+  li {
+    max-width: 550px;
+    color: $primaryColor;
+    padding: 0 25px 18px;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    h5 {
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+
+    &:first-child {
+      border-right: 1px solid #C3EBDF;
+
+      @media (max-width: 991px) {
+        border-right: none;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  img {
+    margin-bottom: 25px;
+  }
+}
+
+// -------------------------------------------------- What do for you section --------------------
+
+#we-do-for-you {
+  @include background('bg/sign-up-2.png', no-repeat, top);
+  padding-top: 309px;
+  margin-bottom: 150px;
+  position: relative;
+  
+  @media (max-width: 575px) {
+    padding-top: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.we-do-for-you {
+  img {
+    width: 100%;
+
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+}
+
+.sign-up-box {
+  position: absolute;
+  max-width: 607px;
+  background: $white;
+  border: 1px solid $lightBorder;
+  border-radius: 8px;
+  left: 50%;
+  bottom: -121px;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 50px 50px 30px;
+  @include boxShadow;
+
+  @media (max-width: 991px) {
+    min-width: 500px;
+  }
+
+  @media (max-width: 575px) {
+    position: relative;
+    min-width: initial;
+    padding: 25px 20px;
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    left: 0;
+    bottom: 0;
+    transform: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    color: $primaryColor;
+    margin-bottom: 12px;
+    @include bold;
+
+    @media (max-width: 575px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  p {
+    @include lightPrimaryText;
+  }
+
+  .btn-primary {
+    margin-top: 50px;
+
+    & + p {
+      color: $secondaryColor;
+      margin-top: 15px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

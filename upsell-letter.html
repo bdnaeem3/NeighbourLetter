@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/animate.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+
+    <script src="./assets/js/font-awesome.js"></script>
+
+    <title>Neighbor Letters</title>
+
+    <link rel="icon" href="./assets/img/fav.png" type="image/png">
+</head>
+
+
+<body>
+<!-- Header -->
+<header class="sticky-top">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center header">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <a class="logo" href="#">
+                    <img src="assets/img/logo.svg" alt=""/>
+                </a><!-- /Logo -->
+            </div>
+
+            <a href="#" class="btn btn-primary">904-397-4123</a>
+        </div>
+    </div>
+</header><!-- /Header -->
+
+<!-- Result -->
+<section id="letters">
+    <div class="container">
+        <div class="letters">
+            <h2 class="large-title">Select Preferred Letter</h2>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="letter wow fadeInUpe">
+                        <div class="letter-img" data-toggle="modal" data-target="#letter-modal">
+                            <img src="./assets/img/letter.png" alt=""/>
+                            <img src="./assets/img/icons/search.svg" alt="" class="search-icon"/>
+                        </div>
+                        <p>Cash Only Letter</p>
+                        <button class="btn btn-primary w-100" data-toggle="modal" data-target="#process-modal">Select</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUpe">
+                    <div class="letter">
+                        <div class="letter-img" data-toggle="modal" data-target="#letter-modal">
+                            <img src="./assets/img/letter-2.png" alt=""/>
+                            <img src="./assets/img/icons/search.svg" alt="" class="search-icon"/>
+                        </div>
+                        <p>Cash and Owner Finance Letter</p>
+                        <button class="btn btn-primary w-100" data-toggle="modal" data-target="#process-modal">Select</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow fadeInUpe">
+                    <div class="letter">
+                        <div class="letter-img" data-toggle="modal" data-target="#letter-modal">
+                            <img src="./assets/img/letter-3.png" alt=""/>
+                            <img src="./assets/img/icons/search.svg" alt="" class="search-icon"/>
+                        </div>
+                        <p>Cash Buyers Letter</p>
+                        <button class="btn btn-primary w-100" data-toggle="modal" data-target="#process-modal">Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-80 page-bottom-bg">
+        <img src="./assets/img/page-bottom.png" alt=""/>
+    </div>
+</section><!-- /Result -->
+
+<!-- Img Popup -->
+<div class="modal fade letter-popup" id="letter-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="text-center my-30">
+            <img src="./assets/img/letter.png" alt=""/>
+        </div>
+    </div>
+</div><!-- /Img Popup -->
+
+
+
+<!-- Popup -->
+<div class="modal fade popup-wrapper" id="process-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-wrapper">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img src="./assets/img/icons/cross.svg" alt=""/>
+            </button>
+
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="popup">
+                        <p>Basic upsell Payment</p>
+                        <form action="#" method="post">
+                            <input type="text" class="nl-input m-0" placeholder="Your Full Name"/>
+                            <input type="text" class="nl-input m-0" placeholder="Company Name"/>
+
+                            <div class="d-flex mt-10">
+                                <input type="text" class="nl-input m-0 mr-5" placeholder="Postal Address"/>
+                                <input type="text" class="nl-input m-0 ml-5" placeholder="Phone number"/>
+                            </div>
+
+                            <input type="email" class="nl-input m-0" placeholder="Email Address"/>
+
+                            <div class="d-flex">
+                                <input type="text" class="nl-input m-0 mr-5" placeholder="Estimated Value"/>
+                                <input type="text" class="nl-input m-0 ml-5" placeholder="Desired Price"/>
+                            </div>
+
+                            <div class="d-flex">
+                                <input type="text" class="nl-input m-0 mr-5" placeholder="Down Payment"/>
+                                <input type="text" class="nl-input m-0 ml-5" placeholder="Monthly Payment"/>
+                            </div>
+
+                            <div class="card-details">
+                                <input type="text" placeholder="Card Number"/>
+                                <input type="text" placeholder="MM/YY">
+                                <input type="text" placeholder="CVC">
+                                <input type="text" placeholder="ZIP" class="">
+                            </div>
+
+                            <button type="button" class="btn btn-primary w-100 mt-25">Pay $25</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /Popup -->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="widget">
+                <h3><img src="./assets/img/logo.svg" alt=""/></h3>
+                <ul class="footer-menu">
+                    <li><a href="#"><i class="fas fa-globe-asia"></i> www.neighborletters.com</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> hello@neighborletters.com</a></li>
+                    <li><a href="#"><i class="fas fa-phone-alt"></i> 904-397-4123</a></li>
+                </ul>
+                <ul class="d-flex footer-social">
+                    <li><a href="#" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank" class="twi"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Legal Stuff</h3>
+                <ul class="footer-menu">
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Address</h3>
+                <p>
+                    1301 Riverplace Blvd – Suite 800, Jacksonville, FL 32207
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            ©2019 Global Citizens Holdings All Rights Reserved.
+        </div>
+    </div>
+</footer><!-- /Footer -->
+
+<!-- js -->
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/custom.min.js"></script>
+</body>
+</html>

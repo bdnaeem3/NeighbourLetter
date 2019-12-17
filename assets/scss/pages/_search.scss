@@ -1,0 +1,261 @@
+// -------------------------------------------------- Page Heading Section --------------------
+
+#page-heading {
+  @include background('bg/results-banner.png', no-repeat, center top, 100% 80%);
+}
+
+.page-heading {
+
+  h2 {
+    padding: 54px 0 34px;
+  }
+
+  form {
+    background: $white;
+    border: 1px solid $lightBorder;
+    border-radius: 8px;
+    padding: 15px 15px 30px 30px;
+    @include boxShadow();
+
+    .nl-input {
+      margin: 15px 15px 15px 0;
+      
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+
+    select.nl-input {
+      background-position: 90% center;
+
+      @media (max-width: 991px) {
+        background-position: 97% center;
+      }
+    }
+  }
+}
+
+// -------------------------------------------------- Results Section --------------------
+
+#results {
+  h2 {
+    text-align: center;
+    margin: 60px 0 35px;
+    font-size: 1.5rem;
+    line-height: 1.375;
+    color: $primaryColor;
+    @include bold;
+
+    svg {
+      color: $secondaryColor;
+      margin-right: 15px;
+    }
+  }
+}
+
+.results {
+  padding-top: 60px;
+  background: #F5FAF9;
+  position: relative;
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.375;
+    color: $secondaryColor;
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: $primaryColor;
+    margin-bottom: 8px;
+  }
+}
+
+.map-wrapper {
+  background: $white;
+  border: 1px solid $lightBorder;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  @include boxShadow();
+
+  &.popup-on:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(236, 252, 247, .8);
+  }
+
+  form {
+    width: 540px;
+    z-index: 1;
+    background: white;
+    padding: 30px;
+    border: 1px solid rgba(17,181,228,0.25);
+    box-shadow: 0 4px 8px 0 rgba(17,181,228,0.18);
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%)translateX(-50%);
+
+    @media (max-width: 575px) {
+      width: calc(100% - 20px);
+    }
+
+    a {
+      margin-bottom: 35px;
+      display: table;
+      text-decoration: underline;
+      color: $secondaryColor;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    .btn-primary {
+      margin-right: 20px;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: #9AA3A2;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.map {
+  border: 1px solid rgba(56,170,157,0.37);
+  border-radius: 8px;
+}
+
+.map-type {
+  label {
+    padding: 0;
+    margin-right: 30px;
+    color: $secondaryColor;
+    margin-bottom: 45px;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.check-field {
+  background: $white;
+  border: 1px solid $secondaryColor;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+
+  &.selected {
+    &:before {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: $secondaryColor;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      border-radius: 2px;
+    }
+  }
+}
+
+.page-bottom-bg {
+  margin-top: 110px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.section-bottom-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.popup {
+  p {
+    margin-bottom: 25px;
+    @include lightPrimaryText();
+  }
+
+  .nl-input {
+    width: 100%;
+  }
+
+  a {
+    color: $secondaryColor;
+    text-decoration: underline;
+  }
+
+  label {
+    color: $primaryColor;
+  }
+
+  form {
+    .nl-input {
+      margin-bottom: 15px !important;
+    }
+  }
+}
+
+.revert-btn-color {
+  button {
+    border-radius: 6px;
+
+    &:focus {
+      outline: none !important;
+    }
+
+    &:first-child {
+      margin-right: 20px;
+
+      @media (max-width: 575px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    &.btn-primary {
+      color: white;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

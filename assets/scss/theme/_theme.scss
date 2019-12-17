@@ -1,0 +1,53 @@
+// all Theme settings file import
+@import "colors";
+@import "mixins";
+@import "spacing";
+@import "reset";
+@import "buttons";
+@import "inputs";
+@import "modal";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.625;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+    color: $primaryColor;
+    @include bold;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-top: 15px;
+    color: $secondaryColor;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 15px;
+    @include lightPrimaryText;
+  }
+}
+
+.large-title {
+  font-size: 2.5rem;
+  color: $textHeading;
+  line-height: 1.25;
+  text-align: center;
+  @include bold;
+  
+  @media (max-width: 767px) {
+    font-size: 1.8rem;
+  }
+}

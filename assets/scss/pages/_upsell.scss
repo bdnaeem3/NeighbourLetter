@@ -1,0 +1,136 @@
+// -------------------------------------------------- Page Heading Section --------------------
+
+.upsell-info {
+  @include background('bg/upsell-header.png');
+  border-radius: 8px;
+  @include boxShadow();
+
+  li {
+    text-align: center;
+    color: $white;
+
+    h1 {
+      font-size: 3.75rem;
+      line-height: 1.4;
+      @include bold;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+// -------------------------------------------------- Pricing Section --------------------
+
+#pricing {
+  @include background('bg/upsell-bottom.png', no-repeat, bottom, contain);
+}
+
+.pricing {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    color: $secondaryColor;
+    margin: 100px 0 60px;
+    text-align: center;
+    @include bold;
+
+    @media (max-width: 767px) {
+      font-size: 1.8rem;
+      margin: 60px 0;
+    }
+  }
+}
+
+.pricing-item {
+  background: $white;
+  border: 1px solid $lightBorder;
+  border-radius: 8px;
+  padding: 30px;
+  min-height: 1070px;
+  @include boxShadow();
+
+  @media (max-width: 991px) {
+    min-height: initial;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 1.406;
+    color: $primaryColor;
+    @include bold;
+  }
+
+  small {
+    font-size: .875rem;
+    line-height: 1.571;
+    color: $primaryColor;
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: $secondaryColor;
+    margin-bottom: 15px;
+  }
+
+  li {
+    display: flex;
+    color: $secondaryColor;
+    font-size: 1.5rem;
+    line-height: 1.375;
+    margin-top: 30px;
+
+    @media (max-width: 767px) {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    input[type=checkbox]{
+      margin-top: 10px;
+      margin-right: 30px;
+    }
+  }
+
+  .btn {
+    margin-top: 30px;
+    white-space: nowrap;
+
+    @media (max-width: 575px) {
+      font-size: .875rem;
+    }
+  }
+
+  .package-desc {
+    min-height: 130px;
+    margin-bottom: 0;
+    display: block;
+
+    @media (max-width: 991px) {
+      min-height: initial;
+    }
+  }
+}
+
+// -------------------------------------------------- Popup --------------------
+
+.card-details {
+  height: 48px;
+  border: 1px solid $secondaryColor;
+  border-radius: 4px;
+
+  input {
+    height: 46px;
+    float: left;
+    width: 18%;
+    background: transparent;
+
+    &::placeholder {
+      @include lightPrimaryText(.45);
+    }
+
+    &:first-child {
+      padding-left: 80px;
+      width: 46%;
+      @include background('icons/visa.svg', no-repeat, 20px center, 40px)
+    }
+  }
+}

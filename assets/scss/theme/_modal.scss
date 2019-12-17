@@ -1,0 +1,41 @@
+.popup-wrapper {
+  .modal-dialog {
+    max-width: 540px;
+    width: 540px;
+
+    @media (max-width: 575px) {
+      width: calc(100% - 20px);
+    }
+  }
+
+  .modal-wrapper {
+    padding: 30px;
+    background: $white;
+    border: 1px solid $lightBorder;
+    border-radius: 8px;
+    position: relative;
+    @include boxShadow();
+  }
+
+  .modal-content {
+    border: none;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .modal-footer {
+    border-top: none;
+    padding: 0;
+    margin-top: 35px;
+  }
+
+  .close {
+    position: absolute;
+    cursor: pointer;
+    z-index: 9;
+    right: 15px;
+    top: 15px;
+  }
+}

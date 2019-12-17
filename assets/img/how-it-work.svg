@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1059px" height="884px" viewBox="0 0 1059 884" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>BG LINE</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Final-Template" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Home-Page" transform="translate(-210.000000, -5403.000000)">
+            <g id="08-How-does-it-work?" transform="translate(0.000000, 5139.000000)">
+                <g id="Section" transform="translate(165.000000, 230.000000)">
+                    <g id="BG-LINE" transform="translate(46.000000, 35.124443)">
+                        <path d="M0,256.875557 C160.47079,256.875557 360.275783,210.773236 475,137.875557 C571,76.8755571 674,-35.1244429 855,10.8755571 C1036,56.8755571 1057,103.875557 1057,174.875557 C1057,305.3105 951,318.875557 825,383.875557 C699,448.875557 729,510.875557 374.901822,483.875557 C20.8036438,456.875557 31.1217955,661.578239 84.1516444,753.875557 C145.170885,860.078239 415.279102,671.936596 603,880.875557" id="Line" stroke="#38AA9D" stroke-width="2" stroke-linecap="square" stroke-dasharray="10"></path>
+                        <g id="paper-plane" transform="translate(239.500000, 221.375557) rotate(32.000000) translate(-239.500000, -221.375557) translate(210.000000, 201.875557)" fill-rule="nonzero">
+                            <polygon id="Path" fill="#38AA9D" points="17.064 21.032 58.064 0.032 24.064 25.032 44.064 38.032 58.064 0.032 0 12.032"></polygon>
+                            <polygon id="Path" fill="#2B8F84" points="24.064 25.032 20.127 38.032 17.064 21.032 58.064 0.032"></polygon>
+                            <polygon id="Path" fill="#185D55" points="24.064 25.032 20.064 38.032 31.912 30.133"></polygon>
+                        </g>
+                        <g id="paper-plane-copy" transform="translate(589.500000, 51.375557) rotate(17.000000) translate(-589.500000, -51.375557) translate(560.000000, 31.875557)" fill-rule="nonzero">
+                            <polygon id="Path" fill="#38AA9D" points="17.064 21.032 58.064 0.032 24.064 25.032 44.064 38.032 58.064 0.032 0 12.032"></polygon>
+                            <polygon id="Path" fill="#2B8F84" points="24.064 25.032 20.127 38.032 17.064 21.032 58.064 0.032"></polygon>
+                            <polygon id="Path" fill="#185D55" points="24.064 25.032 20.064 38.032 31.912 30.133"></polygon>
+                        </g>
+                        <g id="paper-plane-copy-2" transform="translate(1008.500000, 295.375557) rotate(201.000000) translate(-1008.500000, -295.375557) translate(979.000000, 275.875557)" fill-rule="nonzero">
+                            <polygon id="Path" fill="#38AA9D" points="17.064 21.032 58.064 0.032 24.064 25.032 44.064 38.032 58.064 0.032 0 12.032"></polygon>
+                            <polygon id="Path" fill="#2B8F84" points="24.064 25.032 20.127 38.032 17.064 21.032 58.064 0.032"></polygon>
+                            <polygon id="Path" fill="#185D55" points="24.064 25.032 20.064 38.032 31.912 30.133"></polygon>
+                        </g>
+                        <g id="paper-plane-copy-3" transform="translate(601.500000, 490.375557) rotate(216.000000) translate(-601.500000, -490.375557) translate(572.000000, 470.875557)" fill-rule="nonzero">
+                            <polygon id="Path" fill="#38AA9D" points="17.064 21.032 58.064 0.032 24.064 25.032 44.064 38.032 58.064 0.032 0 12.032"></polygon>
+                            <polygon id="Path" fill="#2B8F84" points="24.064 25.032 20.127 38.032 17.064 21.032 58.064 0.032"></polygon>
+                            <polygon id="Path" fill="#185D55" points="24.064 25.032 20.064 38.032 31.912 30.133"></polygon>
+                        </g>
+                        <g id="paper-plane-copy-4" transform="translate(72.500000, 599.375557) rotate(151.000000) translate(-72.500000, -599.375557) translate(43.000000, 579.875557)" fill-rule="nonzero">
+                            <polygon id="Path" fill="#38AA9D" points="17.064 21.032 58.064 0.032 24.064 25.032 44.064 38.032 58.064 0.032 0 12.032"></polygon>
+                            <polygon id="Path" fill="#2B8F84" points="24.064 25.032 20.127 38.032 17.064 21.032 58.064 0.032"></polygon>
+                            <polygon id="Path" fill="#185D55" points="24.064 25.032 20.064 38.032 31.912 30.133"></polygon>
+                        </g>
+                        <g id="paper-plane-copy-5" transform="translate(402.500000, 772.375557) rotate(53.000000) translate(-402.500000, -772.375557) translate(373.000000, 752.875557)" fill-rule="nonzero">
+                            <polygon id="Path" fill="#38AA9D" points="17.064 21.032 58.064 0.032 24.064 25.032 44.064 38.032 58.064 0.032 0 12.032"></polygon>
+                            <polygon id="Path" fill="#2B8F84" points="24.064 25.032 20.127 38.032 17.064 21.032 58.064 0.032"></polygon>
+                            <polygon id="Path" fill="#185D55" points="24.064 25.032 20.064 38.032 31.912 30.133"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

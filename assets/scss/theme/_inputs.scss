@@ -1,0 +1,65 @@
+.nl-input {
+  height: 48px;
+  line-height: 48px;
+  width: calc(100% - 30px);
+  background: $inputBg;
+  border: 1px solid #B0ECE5;
+  border-radius: 4px;
+  padding: 0 15px;
+  margin: 15px;
+
+  &::placeholder {
+    font-size: 14px;
+    color: $placeholder;
+  }
+
+  &:focus {
+    border-color: $border;
+  }
+}
+
+select.nl-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: '';
+  @include background('icons/select-arrow.svg', no-repeat, 95% center, 12px)
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: relative;
+  margin-right: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    background: $white;
+    border: 1px solid $secondaryColor;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    top: -5px;
+    left: -4px;
+    position: absolute;
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  &:checked {
+    &:after {
+      content: '';
+      width: 16px;
+      height: 16px;
+      background: $secondaryColor;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      border-radius: 2px;
+    }
+  }
+
+  & + label {
+    cursor: pointer;
+  }
+}

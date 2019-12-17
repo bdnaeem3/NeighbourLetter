@@ -1,0 +1,39 @@
+// Transition
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s) {
+  transition: $property $duration $animate $delay;
+}
+
+// Background Image
+@mixin background($path, $repeat: no-repeat, $position: center, $size: cover) {
+  background: url("../../assets/img/#{$path}")$repeat $position/$size;
+}
+
+// BoxShadow
+@mixin boxShadow($size:0 4px 8px 0, $color:rgba(17,181,228,0.18) ) {
+  box-shadow: #{$size} #{$color} ;
+}
+
+// Light Right Border
+@mixin lightRightBorder($opacity: .1) {
+  border-right: 1px solid rgba(8, 65, 60, $opacity);
+}
+
+// Light Bottom Border
+@mixin lightBottomBorder($opacity: .1) {
+  border-bottom: 1px solid rgba(8, 65, 60, $opacity);
+}
+
+// Gradient Background Color
+@mixin gradientBg($leftGradient:$btnFirstColor, $rightGradient: $btnLastColor) {
+  background-image: linear-gradient(225deg, $leftGradient 0%, $rightGradient 100%) !important;
+}
+
+// Light Primary Text
+@mixin lightPrimaryText($opacity: .75) {
+  color: rgba(8, 65, 60, $opacity);
+}
+
+// Bold
+@mixin bold() {
+  font-weight: 700;
+}

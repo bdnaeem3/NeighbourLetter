@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2px" height="992px" viewBox="0 0 2 992" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-dasharray="10" stroke-linecap="square">
+        <g id="01-Home-Page-Copy" transform="translate(-209.000000, -5558.000000)" stroke="#38AA9D" stroke-width="2">
+            <g id="08-How-does-it-work?" transform="translate(0.000000, 5139.000000)">
+                <g id="Section" transform="translate(163.000000, 230.000000)">
+                    <g id="BG-LINE" transform="translate(46.000000, 189.124443)">
+                        <path d="M1,0.875557089 L1,999.535557" id="Line"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/animate.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+
+    <script src="./assets/js/font-awesome.js"></script>
+
+    <title>Neighbor Letters</title>
+
+    <link rel="icon" href="./assets/img/fav.png" type="image/png">
+</head>
+
+
+<body>
+<!-- Header -->
+<header class="sticky-top">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center header">
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <a class="logo" href="#">
+                    <img src="assets/img/logo.svg" alt=""/>
+                </a><!-- /Logo -->
+            </div>
+
+            <a href="#" class="btn btn-primary">904-397-4123</a>
+        </div>
+    </div>
+</header><!-- /Header -->
+
+<!-- Page Heading -->
+<section id="page-heading">
+    <div class="container">
+        <div class="page-heading">
+            <h2 class="large-title">Search Neighbor Letters</h2>
+
+            <!-- Search Form -->
+            <form action="#" method="post" class="wow fadeInUp">
+                <div class="d-flex flex-wrap flex-lg-nowrap">
+                    <input type="text" placeholder="Address" class="nl-input" required/>
+                    <input type="text" placeholder="Enter Unit(Optional)" class="nl-input"/>
+                    <input type="text" placeholder="Enter City" class="nl-input"/>
+                    <select class="nl-input">
+                        <option>Select State</option>
+                        <option>Dhaka</option>
+                        <option>Barishal</option>
+                        <option>Chattogram</option>
+                    </select>
+                    <input type="text" placeholder="Enter Zip code" class="nl-input"/>
+                </div>
+
+                <div class="d-flex justify-content-end mt-15 mr-15">
+                    <button type="submit" class="btn btn-outline-primary">Find Neighbors!</button>
+                </div>
+            </form><!-- /Search Form -->
+        </div>
+    </div>
+</section><!-- /Page Heading -->
+
+<!-- Result -->
+<section id="results">
+    <h2><i class="fas fa-map-marker-alt"></i> 20 Ohio Rd, Altoona, FL 32702</h2>
+
+
+    <div class="results">
+        <div class="container">
+            <p>Move your property to the correct location</p>
+            <h3>Tap or click the correct location and the property will be placed there</h3>
+
+            <div class="map-wrapper"><div class="map" style="width: 100%; height: 560px;"></div></div>
+
+            <div class="map-type">
+                <input type="radio" id="street" name="map" checked> <label for="street">Street</label>
+                <input type="radio" id="arial" name="map"> <label for="arial">Aerial</label>
+            </div>
+            <div class="d-flex flex-column flex-sm-row revert-btn-color">
+                <button class="btn-primary">Yes, it’s a correct location</button>
+                <button>No, let me change it</button>
+            </div>
+        </div>
+
+        <div class="page-bottom-bg">
+            <img src="./assets/img/page-bottom.png" alt=""/>
+        </div>
+
+        <img src="./assets/img/bg/results-bottom.png" alt="" class="section-bottom-shape"/>
+    </div>
+</section><!-- /Result -->
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="widget">
+                <h3><img src="./assets/img/logo.svg" alt=""/></h3>
+                <ul class="footer-menu">
+                    <li><a href="#"><i class="fas fa-globe-asia"></i> www.neighborletters.com</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> hello@neighborletters.com</a></li>
+                    <li><a href="#"><i class="fas fa-phone-alt"></i> 904-397-4123</a></li>
+                </ul>
+                <ul class="d-flex footer-social">
+                    <li><a href="#" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank" class="twi"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Quick Links</h3>
+                <ul class="footer-menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Legal Stuff</h3>
+                <ul class="footer-menu">
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3>Address</h3>
+                <p>
+                    1301 Riverplace Blvd – Suite 800, Jacksonville, FL 32207
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            ©2019 Global Citizens Holdings All Rights Reserved.
+        </div>
+    </div>
+</footer><!-- /Footer -->
+
+<!-- js -->
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/custom.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5efwV26howYt-_4cDQrGFxWACqiCWDbQ"></script>
+<script src="https://cdn.jsdelivr.net/gmap3/7.2.0/gmap3.min.js"></script>
+<script>
+    $('.map')
+        .gmap3({
+            center:[48.8620722, 2.352047],
+            zoom:14
+        })
+        .marker([
+            {
+                position:[48.8620722, 2.352047],
+                icon: "./assets/img/icons/map.svg"
+            },
+        ]);
+</script>
+</body>
+</html>
