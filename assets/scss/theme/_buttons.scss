@@ -33,14 +33,12 @@
 }
 
 .btn-light {
-  min-height: 57px;
-  line-height: 57px;
-  width: 340px;
   font-size: 1.2rem;
   color: $secondaryColor;
   background: $white;
   box-shadow: 0 2px 14px 0 rgba(8,65,60,0.25);
   border-radius: 4px;
+    padding: 12px 25px;
   @include bold;
 
   &:hover {
