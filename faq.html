@@ -36,63 +36,67 @@
 </header><!-- /Header -->
 
 <!-- Page Heading -->
-<section id="page-heading">
-    <div class="container">
-        <div class="page-heading">
-            <h2 class="large-title">Search Neighbor Letters</h2>
+<section id="page-heading-new">
+    <!-- Heading BG -->
+    <img src="/assets/img/bg/about.svg" alt="" class="w-100"/>
+    <!-- /Heading BG -->
 
-            <!-- Search Form -->
-            <form action="#" method="post" class="wow fadeInUp">
-                <div class="d-flex flex-wrap flex-lg-nowrap">
-                    <input type="text" placeholder="Address" class="nl-input" required/>
-                    <input type="text" placeholder="Enter Unit(Optional)" class="nl-input"/>
-                    <input type="text" placeholder="Enter City" class="nl-input"/>
-                    <select class="nl-input">
-                        <option>Select State</option>
-                        <option>Dhaka</option>
-                        <option>Barishal</option>
-                        <option>Chattogram</option>
-                    </select>
-                    <input type="text" placeholder="Enter Zip code" class="nl-input"/>
-                </div>
+    <div class="page-info">
+        <div class="container page-heading-new d-flex justify-content-between align-items-center">
+            <!-- Page Info -->
+            <div class="breadcumb">
+                <p class="fsp-12"><a href="/">Home</a> • FAQ</p>
+                <h2 class="large-title text-left text-primary mt-5">FAQ</h2>
+            </div>
+            <!-- /Page Info -->
 
-                <div class="d-flex justify-content-end mt-15 mr-15">
-                    <button type="submit" class="btn btn-outline-primary">Find Neighbors!</button>
-                </div>
-            </form><!-- /Search Form -->
+            <img src="/assets/img/heading/faq.svg" alt=""/>
         </div>
     </div>
 </section><!-- /Page Heading -->
 
-<!-- Result -->
-<section id="results">
-    <h2><i class="fas fa-map-marker-alt"></i> 20 Ohio Rd, Altoona, FL 32702</h2>
+<!-- FAQ -->
+<section id="faq">
+    <div class="container">
+        <div class="faq">
+            <h2 class="large-title text-primary mb-40">Frequently Asked<br/>Questions</h2>
 
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-30">
+                    <a href="faq-about-data.html" class="faq-about">
+                        <img src="/assets/img/icons/about-data.svg" alt=""/>
+                        <h3>About Data</h3>
+                    </a>
+                </div>
 
-    <div class="results">
-        <div class="container">
-            <p>Move your property to the correct location</p>
-            <h3>Tap or click the correct location and the property will be placed there</h3>
+                <div class="col-12 col-md-6 col-lg-3 mb-30">
+                    <a href="faq-about-mailing.html" class="faq-about">
+                        <img src="/assets/img/icons/mailing.svg" alt=""/>
+                        <h3>About Mailing</h3>
+                    </a>
+                </div>
 
-            <div class="map-wrapper"><div class="map" style="width: 100%; height: 560px;"></div></div>
+                <div class="col-12 col-md-6 col-lg-3 mb-30">
+                    <a href="faq-deals-to-neighbors.html" class="faq-about">
+                        <img src="/assets/img/icons/sending-deals.svg" alt=""/>
+                        <h3>About Sending Deals to Neighbors</h3>
+                    </a>
+                </div>
 
-            <div class="map-type">
-                <input type="radio" id="street" name="map" checked> <label for="street">Street</label>
-                <input type="radio" id="arial" name="map"> <label for="arial">Aerial</label>
+                <div class="col-12 col-md-6 col-lg-3 mb-30">
+                    <a href="faq-deals-to-cash-buyers.html" class="faq-about">
+                        <img src="/assets/img/icons/cash-buyers.svg" alt=""/>
+                        <h3>About Sending Deals to Cash Buyers</h3>
+                    </a>
+                </div>
             </div>
-            <div class="d-flex flex-column flex-sm-row revert-btn-color">
-                <button class="btn-primary">Yes, it’s a correct location</button>
-                <button>No, let me change it</button>
+
+            <div class="mt-80 page-bottom-bg">
+                <img src="./assets/img/page-bottom.png" alt="">
             </div>
         </div>
-
-        <div class="page-bottom-bg">
-            <img src="./assets/img/page-bottom.png" alt=""/>
-        </div>
-
-        <img src="./assets/img/bg/results-bottom.png" alt="" class="section-bottom-shape"/>
     </div>
-</section><!-- /Result -->
+</section>
 
 <!-- Footer -->
 <footer>
@@ -151,20 +155,5 @@
 <script src="./assets/js/bootstrap.min.js"></script>
 <script src="./assets/js/wow.min.js"></script>
 <script src="./assets/js/custom.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5efwV26howYt-_4cDQrGFxWACqiCWDbQ"></script>
-<script src="https://cdn.jsdelivr.net/gmap3/7.2.0/gmap3.min.js"></script>
-<script>
-    $('.map')
-        .gmap3({
-            center:[48.8620722, 2.352047],
-            zoom:14
-        })
-        .marker([
-            {
-                position:[48.8620722, 2.352047],
-                icon: "./assets/img/icons/map.svg"
-            },
-        ]);
-</script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+$maxWidth: 300;
+
+@each $mw in $maxWidth {
+    .mw-#{$mw} {
+        max-width: $mw + px !important;
+    }
+}

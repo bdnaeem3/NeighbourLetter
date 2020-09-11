@@ -33,6 +33,11 @@
   color: rgba(8, 65, 60, $opacity);
 }
 
+// Light Secondary Text
+@mixin lightSecondaryText($opacity: .75) {
+  color: rgba(0, 14, 104, $opacity);
+}
+
 // Bold
 @mixin bold() {
   font-weight: 700;

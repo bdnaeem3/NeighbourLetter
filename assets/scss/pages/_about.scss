@@ -1,0 +1,173 @@
+#page-heading-new {
+    position: relative;
+
+    .page-info {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    p, p a {
+        color: $secondaryColor;
+    }
+}
+
+.page-heading-new {
+    height: 100%;
+
+    img {
+        margin-bottom: -20px;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+.breadcumb {
+    margin-top: -20px;
+    text-transform: uppercase;
+}
+
+.text-primary {
+    color: $primaryColor !important;
+}
+
+#story {
+    margin: 120px 0;
+
+    @media (max-width: 991px) {
+        margin: 50px 0;
+    }
+
+    h2 {
+
+        @media (max-width: 991px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    p {
+        @include lightPrimaryText;
+    }
+}
+
+#va {
+    @include background('heading/va-bg.svg', no-repeat, center top, 100%);
+    padding: 140px 0 190px;
+
+    @media (max-width: 991px) {
+        padding: 100px 0 50px;
+    }
+
+    .position-relative {
+        z-index: 9;
+    }
+}
+
+.va-content {
+    background: white;
+    @include boxShadow();
+    padding: 60px;
+    position: relative;
+
+    li {
+        display: flex;
+        align-items: start;
+        margin-top: 30px;
+        color: rgba(0, 40, 104, 0.75);
+
+        img {
+            margin-right: 16px;
+        }
+    }
+
+    h3 {
+        color: #002868;
+    }
+}
+
+.va-img {
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.lady-center {
+    position: absolute;
+    bottom: -190px;
+    left: 55%;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.lady-right {
+    position: absolute;
+    right: -100px;
+    bottom: -190px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.tree-left {
+    position: absolute;
+    left: -120px;
+    bottom: -190px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.tree-right {
+    position: absolute;
+    right: -90px;
+    top: 160px;
+    z-index: -1;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+#testimonial {
+    @include background('bg/upsell-bottom.png', no-repeat, bottom, contain);
+    padding-top: 120px;
+
+    @media (max-width: 991px) {
+        padding-top: 0;
+    }
+
+    .row {
+        @include background('bg/testimonial.svg', no-repeat, bottom, cover);
+        padding: 30px;
+        color: white;
+        font-size: 20px;
+        line-height: 30px;
+        font-style: italic;
+    }
+
+    .col-md-4 {
+        border-right: 1px solid rgba(255,255,255,.3);
+
+        @media (max-width: 991px) {
+            border-right: none;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,.3);
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+}

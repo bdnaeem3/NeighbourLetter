@@ -51,6 +51,17 @@ $(document).ready(function () {
         $('button', p).toggleClass('btn-primary');
     });
 
+
+    // Form Input Color
+
+    $('.input-wrapper input, .input-wrapper textarea').on('change', function(){
+        if(this.value.length > 0) {
+            $(this).addClass('hasvalue')
+        } else {
+            $(this).removeClass('hasvalue')
+        }
+    })
+
 });
 
 

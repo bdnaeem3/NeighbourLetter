@@ -1,0 +1,66 @@
+#contact {
+    @include background('bg/upsell-bottom.png', no-repeat, bottom, contain);
+    margin-top: 120px;
+
+    @media (max-width: 991px) {
+        margin-top: 50px;
+    }
+}
+
+.contact-info {
+    max-width: 380px;
+
+    @media (max-width: 991px) {
+        max-width: initial;
+        margin-bottom: 50px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        color: #002443;
+    }
+
+    a {
+        color: #002443;
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+
+    label {
+        font-size: 14px;
+        line-height: 20px;
+        color: #002441;
+    }
+
+    input,
+    textarea {
+        min-height: 50px;
+        padding: 0 16px;
+        border: 1px solid #002441;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #002441;
+        opacity: .25;
+
+        &::placeholder {
+            color: #002441;
+        }
+
+        &:focus {
+            opacity: 1;
+        }
+        
+        &.hasvalue {
+            opacity: 1;
+        }
+    }
+
+    textarea {
+        padding-top: 15px;
+    }
+}
