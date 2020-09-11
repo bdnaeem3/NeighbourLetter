@@ -61,6 +61,8 @@
             font-size: 16px;
             font-weight: 600;
             color: #002446;
+            position: relative;
+            padding-right: 20px;
 
             &[aria-expanded="false"] {
 
@@ -75,7 +77,9 @@
             }
 
             img {
-                float: right;
+                position: absolute;
+                right: 0;
+                top: 5px;
             }
         }
 

@@ -1,6 +1,11 @@
 #page-heading-new {
     position: relative;
 
+    @media (max-width: 991px) {
+        @include background('bg/about.svg', no-repeat, center top, cover);
+        min-height: 140px;   
+    }
+
     .page-info {
         position: absolute;
         width: 100%;
@@ -12,6 +17,12 @@
     p, p a {
         color: $secondaryColor;
     }
+
+    > img {
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
 }
 
 .page-heading-new {
@@ -21,7 +32,21 @@
         margin-bottom: -20px;
 
         @media (max-width: 991px) {
-            display: none;
+            max-width: 50%;
+        }
+
+        &.faq-image {
+
+            @media (max-width: 991px) {
+                max-width: 40%;
+            }
+        }
+
+        &.contact-image {
+
+            @media (max-width: 991px) {
+                max-width: 30%;
+            }
         }
     }
 }
@@ -29,6 +54,10 @@
 .breadcumb {
     margin-top: -20px;
     text-transform: uppercase;
+
+    @media (max-width: 991px) {
+        margin: 0;
+    }
 }
 
 .text-primary {
@@ -59,6 +88,7 @@
     padding: 140px 0 190px;
 
     @media (max-width: 991px) {
+        @include background('heading/va-bg.svg', no-repeat, center, cover);
         padding: 100px 0 50px;
     }
 
@@ -73,11 +103,15 @@
     padding: 60px;
     position: relative;
 
+    @media (max-width: 991px) {
+        padding: 24px 16px;
+    }
+
     li {
         display: flex;
         align-items: start;
         margin-top: 30px;
-        color: rgba(0, 40, 104, 0.75);
+        color: rgba(8, 65, 60, 0.75);
 
         img {
             margin-right: 16px;
@@ -85,7 +119,7 @@
     }
 
     h3 {
-        color: #002868;
+        color: #08413c;
     }
 }
 
@@ -145,7 +179,7 @@
     padding-top: 120px;
 
     @media (max-width: 991px) {
-        padding-top: 0;
+        padding-top: 40px;
     }
 
     .row {

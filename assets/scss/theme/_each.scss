@@ -5,3 +5,11 @@ $maxWidth: 300;
         max-width: $mw + px !important;
     }
 }
+
+$radius: 4;
+
+@each $var in $radius {
+    .radius-#{$var} {
+        border-radius: $var + px !important;
+    }
+}
