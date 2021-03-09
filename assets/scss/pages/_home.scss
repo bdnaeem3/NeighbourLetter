@@ -5,6 +5,14 @@
   text-align: center;
   color: white;
   padding: 10px;
+
+  a {
+      &:hover {
+          background: white;
+          color: #36aa9c !important;
+          text-decoration: none;
+      }
+  }
 }
 
 // -------------------------------------------------- Banner Section --------------------
@@ -821,34 +829,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.login-nav a {
+    color: rgba(8,65,60,.6);
+}

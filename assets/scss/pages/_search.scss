@@ -35,6 +35,11 @@
   }
 
   &__learn-more {
+
+    @media (max-width: 639px) {
+        flex-wrap: wrap;
+    }
+
     img {
         align-self: self-start;
         margin-top: 40px;
@@ -43,13 +48,27 @@
     .breadcumb {
         min-width: 60%;
 
+        @media (max-width: 639px) {
+            width: 100%;
+            text-align: center;
+        }
+
         h2 {
             text-transform: capitalize;
+
+            @media (max-width: 639px) {
+                text-align: center !important;
+            }
         }
     }
 
     img {
         max-width: 40% !important;
+
+        @media (max-width: 639px) {
+            width: 100%;
+            max-width: 100% !important;
+        }
     }
   }
 }
