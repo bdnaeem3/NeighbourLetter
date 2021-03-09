@@ -1,6 +1,10 @@
 .avm {
     &__section {
         margin: 120px 0;
+
+        @media (max-width: 991px) {
+            margin: 50px 0;
+        }
     }
 
     &__content {
@@ -22,6 +26,12 @@
                 line-height: 1.63;
                 color: rgba(8, 65, 60, 0.75);
             }
+
+            img {
+                @media (max-width: 991px) {
+                    margin-bottom: 30px;
+                }
+            }
         }
     }
 }
@@ -29,6 +39,10 @@
 .avm-features {
     &__section {
         margin: 120px 0;
+
+        @media (max-width: 991px) {
+            margin: 0;
+        }
     }
 
     &__content {
@@ -46,6 +60,11 @@
         .row:nth-child(even) {
             flex-direction: row-reverse;
             margin-top: 120px;
+
+            @media (max-width: 991px) {
+                flex-direction: row;
+                margin-top: 0;
+            }
         }
     }
 }
@@ -53,6 +72,10 @@
 .valuation-count {
     &__section {
         margin: 120px 0;
+
+        @media (max-width: 991px) {
+            margin: 50px 0;
+        }
     }
 
     &__content {

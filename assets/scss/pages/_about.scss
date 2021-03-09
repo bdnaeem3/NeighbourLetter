@@ -23,6 +23,12 @@
             display: none;
         }
     }
+
+    &.page-heading__section {
+        @media(max-width: 991px) {
+            min-height: 240px;
+        }
+    }
 }
 
 .page-heading-new {
@@ -73,6 +79,10 @@
 
     &.story__section {
         margin: 155px 0 120px;
+
+        @media (max-width: 991px) {
+            margin: 50px 0;
+        }
     }
 
     h2 {
@@ -137,6 +147,7 @@
     &__avm {
         h3 {
             font-size: 32px;
+            line-height: 42px !important;
         }
 
         > p {
@@ -148,11 +159,20 @@
         &__button {
             margin-top: 40px;
 
+            @media (max-width: 991px) {
+                margin: 40px auto 0;
+            }
+
             + p {
                 font-size: 14px;
                 font-weight: 500;
                 margin-left: 30px;
                 color: rgba(8, 65, 60, 0.75);
+
+                @media (max-width: 991px) {
+                    margin-left: 0;
+                    text-align: center;
+                }
             }
         }
 
