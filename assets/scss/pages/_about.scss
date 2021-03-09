@@ -71,6 +71,10 @@
         margin: 50px 0;
     }
 
+    &.story__section {
+        margin: 155px 0 120px;
+    }
+
     h2 {
 
         @media (max-width: 991px) {
@@ -95,6 +99,10 @@
     .position-relative {
         z-index: 9;
     }
+
+    &.va__section {
+        background-size: cover;
+    }
 }
 
 .va-content {
@@ -116,10 +124,41 @@
         img {
             margin-right: 16px;
         }
+
+        p {
+            max-width: 670px;
+        }
     }
 
     h3 {
         color: #08413c;
+    }
+
+    &__avm {
+        h3 {
+            font-size: 32px;
+        }
+
+        > p {
+            font-size: 16px;
+            line-height: 1.63;
+            color: rgba(8, 65, 60, 0.75);
+        }
+
+        &__button {
+            margin-top: 40px;
+
+            + p {
+                font-size: 14px;
+                font-weight: 500;
+                margin-left: 30px;
+                color: rgba(8, 65, 60, 0.75);
+            }
+        }
+
+        li {
+            margin-top: 24px;
+        }
     }
 }
 
@@ -175,7 +214,7 @@
 }
 
 #testimonial {
-    @include background('bg/upsell-bottom.png', no-repeat, bottom, contain);
+    @include background('bg/upsell-bottom.png', no-repeat, bottom, cover);
     padding-top: 120px;
 
     @media (max-width: 991px) {

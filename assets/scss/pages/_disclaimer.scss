@@ -15,7 +15,7 @@
 }
 
 #disclaimer {
-  @include background('bg/upsell-bottom.png', no-repeat, bottom, contain);
+  @include background('bg/upsell-bottom.png', no-repeat, bottom, cover);
 
   .section-heading {
     h2 {

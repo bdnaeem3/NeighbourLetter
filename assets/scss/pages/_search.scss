@@ -33,6 +33,21 @@
       }
     }
   }
+
+  &__learn-more {
+    img {
+        align-self: self-start;
+        margin-top: 40px;
+    }
+
+    .breadcumb {
+        min-width: 60%;
+
+        h2 {
+            text-transform: capitalize;
+        }
+    }
+  }
 }
 
 // -------------------------------------------------- Results Section --------------------
