@@ -62,6 +62,12 @@ $(document).ready(function () {
         }
     })
 
+    
+    // Button Scroll to Form
+
+    $(".info_form_btn").on('click', function(event) {
+        $('html,body').animate({scrollTop:$('#info_form').offset().top - 100}, 1000);
+    });
 });
 
 

@@ -13,8 +13,8 @@
   background-color: transparent;
   box-shadow: 0 8px 25px 0 rgba(56,170,157,0.34);
   white-space: nowrap;
+  font-weight: 600;
   @include gradientBg();
-  @include bold;
 
   &:hover {
     @include gradientBg();

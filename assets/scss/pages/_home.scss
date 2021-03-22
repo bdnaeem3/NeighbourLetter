@@ -1,15 +1,17 @@
 // -------------------------------------------------- Banner Top Section --------------------
 
 #banner-top {
-  background: #36aa9c;
+  background: #FF6584;
   text-align: center;
   color: white;
   padding: 10px;
 
   a {
+      min-height: 36px;
+      
       &:hover {
           background: white;
-          color: #36aa9c !important;
+          color: #FF6584 !important;
           text-decoration: none;
       }
   }
