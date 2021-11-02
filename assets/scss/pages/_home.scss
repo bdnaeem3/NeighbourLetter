@@ -1,19 +1,19 @@
 // -------------------------------------------------- Banner Top Section --------------------
 
 #banner-top {
-  background: #FF6584;
+  background: #ff6584;
   text-align: center;
   color: white;
   padding: 10px;
 
   a {
-      min-height: 36px;
-      
-      &:hover {
-          background: white;
-          color: #FF6584 !important;
-          text-decoration: none;
-      }
+    min-height: 36px;
+
+    &:hover {
+      background: white;
+      color: #ff6584 !important;
+      text-decoration: none;
+    }
   }
 }
 
@@ -21,7 +21,7 @@
 
 #banner {
   position: relative;
-  @include background('bg/banner.png', no-repeat, bottom);
+  @include background("bg/banner.png", no-repeat, bottom);
 
   form {
     position: relative;
@@ -41,31 +41,38 @@
     button {
       width: calc(100% - 30px);
       margin: 30px 15px 15px;
-        
-        &.watch-demo-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Shadows Into Light', cursive;
-            font-size: 1.25rem;
-            
-            &:focus {
-                outline: none;
-                box-shadow: none;
-            }
-            
-            img {
-                margin-right: 12px;
-            }
+
+      &.watch-demo-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Shadows Into Light", cursive;
+        font-size: 1.25rem;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
         }
+
+        img {
+          margin-right: 12px;
+        }
+      }
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      color: $border;
+      text-align: center;
     }
   }
 }
 
 .banner {
-    max-width: 710px;
-    margin: 0 auto;
-    
+  max-width: 710px;
+  margin: 0 auto;
+
   h2 {
     padding-top: 60px;
     letter-spacing: -0.6px;
@@ -75,12 +82,11 @@
     }
   }
 
-    p {
-        color: $primaryColor;
-        margin-top: 7px;
-        font-size: 1.125rem;
-
-    }
+  p {
+    color: $primaryColor;
+    margin-top: 7px;
+    font-size: 1.125rem;
+  }
 }
 
 .property-img {
@@ -99,6 +105,53 @@
       max-width: 100%;
     }
   }
+}
+
+#advance-search-toogle {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  color: $primaryColor;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:before {
+    content: "+";
+    height: 28px;
+    width: 28px;
+    background: rgba($border, 0.3);
+    display: inline-flex;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 500;
+    align-items: center;
+    margin-right: 1px;
+    border-radius: 50%;
+    color: $border;
+    margin-right: 15px;
+  }
+
+  &.active-toggle {
+    &:before {
+      content: "-";
+    }
+  }
+
+  &:not(.active-toggle) + .advance-search-toogle + div {
+    @media (min-width: 768px) {
+      margin-top: -58px !important;
+    }
+
+    @media (max-width: 767px) {
+      margin-top: 30px !important;
+    }
+  }
+}
+
+.advance-search-toogle {
+  display: none;
 }
 
 // -------------------------------------------------- Features Section --------------------
@@ -137,8 +190,8 @@
       padding: 25px;
       min-height: 180px;
       cursor: pointer;
-      border-right: 1px solid rgba(56, 170, 157, .15);
-      border-bottom: 1px solid rgba(56, 170, 157, .15);
+      border-right: 1px solid rgba(56, 170, 157, 0.15);
+      border-bottom: 1px solid rgba(56, 170, 157, 0.15);
 
       @media (max-width: 991px) {
         width: 50%;
@@ -154,7 +207,6 @@
       }
 
       br {
-
         @media (max-width: 767px) {
           display: none;
         }
@@ -166,7 +218,7 @@
         border-bottom: none;
 
         @media (max-width: 991px) {
-          border-bottom: 1px solid rgba(56, 170, 157, .15);
+          border-bottom: 1px solid rgba(56, 170, 157, 0.15);
         }
       }
 
@@ -175,7 +227,7 @@
         border-right: none;
 
         @media (max-width: 991px) {
-          border-right: 1px solid rgba(56, 170, 157, .15);
+          border-right: 1px solid rgba(56, 170, 157, 0.15);
         }
       }
 
@@ -203,7 +255,6 @@
 // -------------------------------------------------- What is this Section --------------------
 
 .what-is-this {
-
   p {
     margin-top: 10px;
     @include lightPrimaryText;
@@ -222,7 +273,7 @@
   margin-top: 55px;
   width: 627px;
   max-width: 627px;
-  
+
   @media (max-width: 1299px) {
     max-width: 100%;
     margin-top: 0;
@@ -255,7 +306,7 @@
 // -------------------------------------------------- Why should do section --------------------
 
 #why-should-do {
-  @include background('bg/why-should-do.png', no-repeat, top);
+  @include background("bg/why-should-do.png", no-repeat, top);
   padding: 220px 0 60px;
 
   @media (max-width: 767px) {
@@ -265,7 +316,6 @@
 }
 
 .why-should-do {
-
   p {
     @include lightPrimaryText;
 
@@ -305,7 +355,7 @@
       height: 25px;
       line-height: 25px;
       text-align: center;
-      font-size: .8rem;
+      font-size: 0.8rem;
       border-radius: 50%;
       color: $white;
       min-width: 25px;
@@ -324,7 +374,7 @@
 // -------------------------------------------------- Note section --------------------
 
 #note {
-  @include background('bg/note.png');
+  @include background("bg/note.png");
   padding: 120px 0;
 
   @media (max-width: 767px) {
@@ -386,7 +436,6 @@
     }
 
     &:nth-child(even) {
-
       @media (max-width: 991px) {
         border-right: none !important;
       }
@@ -400,7 +449,6 @@
 
     &:nth-child(9),
     &:nth-child(3) {
-
       @media (max-width: 991px) {
         padding-top: 30px !important;
         @include lightRightBorder;
@@ -419,7 +467,6 @@
 
     &:nth-child(7),
     &:nth-child(8) {
-
       @media (max-width: 991px) {
         @include lightBottomBorder;
       }
@@ -430,7 +477,7 @@
     &:nth-child(3) {
       padding-top: 0;
       min-height: 176px;
-      
+
       @media (max-width: 1199px) {
         min-height: 203px;
       }
@@ -473,63 +520,63 @@
 }
 
 .no-wasted-time {
-  background-image: linear-gradient(222deg, #0AAEDF 0%, #3AFA91 100%);
-  box-shadow: 0 4px 8px 0 rgba(46,231,165,0.50);
+  background-image: linear-gradient(222deg, #0aaedf 0%, #3afa91 100%);
+  box-shadow: 0 4px 8px 0 rgba(46, 231, 165, 0.5);
   border-radius: 12px;
 }
 
 .no-data-formatting {
-  background-image: linear-gradient(222deg, #0746FB 0%, #70DEFA 100%);
-  box-shadow: 0 4px 8px 0 rgba(94,197,250,0.50);
+  background-image: linear-gradient(222deg, #0746fb 0%, #70defa 100%);
+  box-shadow: 0 4px 8px 0 rgba(94, 197, 250, 0.5);
   border-radius: 12px;
 }
 
 .no-messing-around {
-  background-image: linear-gradient(222deg, #FFD982 0%, #FD085B 100%);
-  box-shadow: 0 4px 8px 0 rgba(254,53,100,0.50);
+  background-image: linear-gradient(222deg, #ffd982 0%, #fd085b 100%);
+  box-shadow: 0 4px 8px 0 rgba(254, 53, 100, 0.5);
   border-radius: 12px;
 }
 
 .the-best-letters {
-  background-image: linear-gradient(222deg, #0746FB 0%, #C065FF 100%);
-  box-shadow: 0 4px 8px 0 rgba(158,95,254,0.50);
+  background-image: linear-gradient(222deg, #0746fb 0%, #c065ff 100%);
+  box-shadow: 0 4px 8px 0 rgba(158, 95, 254, 0.5);
   border-radius: 12px;
 }
 
 .no-reliance-on-vas {
-  background-image: linear-gradient(225deg, #24C790 0%, #38A89D 100%);
-  box-shadow: 0 4px 8px 0 rgba(51,176,154,0.50);
+  background-image: linear-gradient(225deg, #24c790 0%, #38a89d 100%);
+  box-shadow: 0 4px 8px 0 rgba(51, 176, 154, 0.5);
   border-radius: 12px;
 }
 
 .faster-sale {
-  background-image: linear-gradient(225deg, #00D4FF 1%, #0090D8 100%);
-  box-shadow: 0 4px 8px 0 rgba(0,160,225,0.50);
+  background-image: linear-gradient(225deg, #00d4ff 1%, #0090d8 100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 160, 225, 0.5);
   border-radius: 12px;
 }
 
 .faster-mailing {
-  background-image: linear-gradient(222deg, #0AAEDF 0%, #3AFA91 100%);
-  box-shadow: 0 4px 8px 0 rgba(46,231,165,0.50);
+  background-image: linear-gradient(222deg, #0aaedf 0%, #3afa91 100%);
+  box-shadow: 0 4px 8px 0 rgba(46, 231, 165, 0.5);
   border-radius: 12px;
 }
 
 .everything-at-one-place {
-  background-image: linear-gradient(222deg, #FFD982 0%, #FD085B 100%);
-  box-shadow: 0 4px 8px 0 rgba(254,53,100,0.50);
+  background-image: linear-gradient(222deg, #ffd982 0%, #fd085b 100%);
+  box-shadow: 0 4px 8px 0 rgba(254, 53, 100, 0.5);
   border-radius: 12px;
 }
 
 .done-for-you {
-  background-image: linear-gradient(222deg, #0746FB 0%, #C065FF 100%);
-  box-shadow: 0 4px 8px 0 rgba(158,95,254,0.50);
+  background-image: linear-gradient(222deg, #0746fb 0%, #c065ff 100%);
+  box-shadow: 0 4px 8px 0 rgba(158, 95, 254, 0.5);
   border-radius: 12px;
 }
 
 // -------------------------------------------------- How it work section --------------------
 
 #how-it-work {
-  @include background('bg/how-it-work.png', no-repeat, bottom);
+  @include background("bg/how-it-work.png", no-repeat, bottom);
   padding: 150px 0 390px;
 
   @media (max-width: 991px) {
@@ -547,25 +594,24 @@
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     left: 46px;
     top: 46px;
     height: calc(100% - 126px);
-    border-right: 2px dashed #38AA9D;
+    border-right: 2px dashed #38aa9d;
     display: none;
 
     @media (max-width: 991px) {
       display: block;
     }
-    
+
     @media (max-width: 767px) {
       left: 30px;
     }
   }
 
   > img {
-
     @media (max-width: 991px) {
       display: none;
     }
@@ -629,19 +675,19 @@
       left: 66%;
       min-width: 294px;
 
-//      p {
-//        font-size: .75rem;
-//        height: 41px;
-//        line-height: 41px;
-//        background: $white;
-//        padding: 0 8px 0 12px;
-//        box-shadow: 0 2px 18px 0 rgba(10,75,69,0.08);
-//        border-radius: 4px;
-//        display: table;
-//        float: left;
-//        margin-right: 12px;
-//        @include bold;
-//      }
+      //      p {
+      //        font-size: .75rem;
+      //        height: 41px;
+      //        line-height: 41px;
+      //        background: $white;
+      //        padding: 0 8px 0 12px;
+      //        box-shadow: 0 2px 18px 0 rgba(10,75,69,0.08);
+      //        border-radius: 4px;
+      //        display: table;
+      //        float: left;
+      //        margin-right: 12px;
+      //        @include bold;
+      //      }
     }
 
     &:nth-child(4) {
@@ -690,7 +736,7 @@
   background: white;
   line-height: 92px;
   text-align: center;
-  box-shadow: 0 40px 50px 0 rgba(56,170,157,0.12);
+  box-shadow: 0 40px 50px 0 rgba(56, 170, 157, 0.12);
   border-radius: 8px;
   flex-shrink: 0;
   margin-right: 25px;
@@ -702,7 +748,6 @@
   }
 
   img {
-
     @media (max-width: 767px) {
       max-width: 45px;
       max-height: 45px;
@@ -735,7 +780,7 @@
     }
 
     &:first-child {
-      border-right: 1px solid #C3EBDF;
+      border-right: 1px solid #c3ebdf;
 
       @media (max-width: 991px) {
         border-right: none;
@@ -752,11 +797,11 @@
 // -------------------------------------------------- What do for you section --------------------
 
 #we-do-for-you {
-  @include background('bg/sign-up-2.png', no-repeat, top);
+  @include background("bg/sign-up-2.png", no-repeat, top);
   padding-top: 309px;
   margin-bottom: 150px;
   position: relative;
-  
+
   @media (max-width: 575px) {
     padding-top: 60px;
     margin-bottom: 0;
@@ -832,5 +877,5 @@
 }
 
 .login-nav a {
-    color: rgba(8,65,60,.6);
+  color: rgba(8, 65, 60, 0.6);
 }

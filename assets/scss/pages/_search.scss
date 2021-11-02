@@ -1,13 +1,24 @@
 // -------------------------------------------------- Page Heading Section --------------------
 
 #page-heading {
-  @include background('bg/results-banner.png', no-repeat, center top, 100% 80%);
+  @include background("bg/results-banner.png", no-repeat, center top, 100% 80%);
 }
 
 .page-heading {
-
   h2 {
     padding: 54px 0 34px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: $border;
+    text-align: center;
+    margin: 15px 15px 15px 0;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
   }
 
   form {
@@ -19,7 +30,7 @@
 
     .nl-input {
       margin: 15px 15px 15px 0;
-      
+
       @media (max-width: 991px) {
         width: 100%;
       }
@@ -35,41 +46,48 @@
   }
 
   &__learn-more {
-
     @media (max-width: 639px) {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
 
     img {
-        align-self: self-start;
-        margin-top: 40px;
+      align-self: self-start;
+      margin-top: 40px;
     }
 
     .breadcumb {
-        min-width: 60%;
+      min-width: 60%;
+
+      @media (max-width: 639px) {
+        width: 100%;
+        text-align: center;
+      }
+
+      h2 {
+        text-transform: capitalize;
 
         @media (max-width: 639px) {
-            width: 100%;
-            text-align: center;
+          text-align: center !important;
         }
-
-        h2 {
-            text-transform: capitalize;
-
-            @media (max-width: 639px) {
-                text-align: center !important;
-            }
-        }
+      }
     }
 
     img {
-        max-width: 40% !important;
+      max-width: 40% !important;
 
-        @media (max-width: 639px) {
-            width: 100%;
-            max-width: 100% !important;
-        }
+      @media (max-width: 639px) {
+        width: 100%;
+        max-width: 100% !important;
+      }
     }
+  }
+
+  #advance-search-toogle {
+    margin-left: 0;
+  }
+
+  .d-flex {
+    transition: 0.5s;
   }
 }
 
@@ -93,7 +111,7 @@
 
 .results {
   padding-top: 60px;
-  background: #F5FAF9;
+  background: #f5faf9;
   position: relative;
 
   h3 {
@@ -119,13 +137,13 @@
   @include boxShadow();
 
   &.popup-on:after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(236, 252, 247, .8);
+    background: rgba(236, 252, 247, 0.8);
   }
 
   form {
@@ -133,13 +151,13 @@
     z-index: 1;
     background: white;
     padding: 30px;
-    border: 1px solid rgba(17,181,228,0.25);
-    box-shadow: 0 4px 8px 0 rgba(17,181,228,0.18);
+    border: 1px solid rgba(17, 181, 228, 0.25);
+    box-shadow: 0 4px 8px 0 rgba(17, 181, 228, 0.18);
     border-radius: 8px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateY(-50%)translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
 
     @media (max-width: 575px) {
       width: calc(100% - 20px);
@@ -164,7 +182,7 @@
       position: absolute;
       top: 15px;
       right: 15px;
-      color: #9AA3A2;
+      color: #9aa3a2;
 
       &:hover {
         color: $secondaryColor;
@@ -178,7 +196,7 @@
 }
 
 .map {
-  border: 1px solid rgba(56,170,157,0.37);
+  border: 1px solid rgba(56, 170, 157, 0.37);
   border-radius: 8px;
 }
 
@@ -208,7 +226,7 @@
 
   &.selected {
     &:before {
-      content: '';
+      content: "";
       width: 16px;
       height: 16px;
       background: $secondaryColor;
@@ -283,17 +301,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
