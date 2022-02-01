@@ -154,6 +154,44 @@
   display: none;
 }
 
+// -------------------------------------------------- How it works Section --------------------
+.how-it-works {
+  position: relative;
+  margin-top: 100px;
+
+  .row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .video-btn {
+    transition: 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.42;
+    color: #064b44;
+    padding-left: 60px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #34ad9a;
+    padding-left: 60px;
+  }
+}
+
 // -------------------------------------------------- Features Section --------------------
 
 .features {
