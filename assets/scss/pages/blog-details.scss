@@ -1,0 +1,121 @@
+.blog_details__section {
+  background: url("../../../assets/img/bg/about.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.blog_details_hero {
+  span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #38aa9d;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: #08413c;
+    margin: 16px 0;
+  }
+
+  &__date {
+    span {
+      font-size: 14px;
+      line-height: 21px;
+      color: #08413c;
+      font-weight: normal;
+      padding-right: 16px;
+
+      &:last-child {
+        position: relative;
+        padding-left: 16px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 56%;
+          left: 0;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: rgba(28, 28, 28, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.post_details {
+  width: 80%;
+  margin: 0 auto;
+
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+    }
+  }
+
+  &__post_description {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    p {
+      text-align: justify;
+      margin: 20px 0;
+      font-size: 16px;
+      line-height: 26px;
+      color: #08413c;
+      opacity: 0.8;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 34px;
+      color: #064b44;
+    }
+
+    .author_profile {
+      margin-top: 30px;
+      &__img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      &__name {
+        margin-left: 16px;
+        span {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          color: #064b44;
+          opacity: 0.7;
+        }
+
+        &__fullName {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 20px;
+          color: #064b44;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
