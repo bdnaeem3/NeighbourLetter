@@ -281,34 +281,57 @@
 
 /* start pagination area */
 .pagination {
+  .page-item:first-child,
+  .page-item:last-child {
+    .page-link {
+      border: none;
+      color: $blogHeading;
+
+      &[disabled],
+      &[disabled]:hover {
+        color: #bcbcbc;
+        pointer-events: none;
+      }
+
+      &:hover {
+        background: white;
+        color: $blogHeading;
+      }
+    }
+  }
+
   .page-link {
-    border: none;
     color: #bcbcbc;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
     border: 1px solid #bcbcbc;
-    box-sizing: border-box;
     border-radius: 6px;
-    margin: 0 8px;
-    padding: 10px 14px;
+    margin: 0 6px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 
-    &::focus {
+    &:focus {
       box-shadow: none;
     }
 
     &:hover {
       background: #34ad9a;
       color: #ffffff;
+      border: 1px solid #185bc3;
     }
   }
 
   .active {
-    border: 1px solid #185bc3;
-    color: #ffffff !important;
-    background: #34ad9a;
+    .page-link {
+      border: 1px solid #185bc3;
+      color: #ffffff !important;
+      background: #34ad9a;
+    }
   }
-
-  
 }
 /* close pagination area */
