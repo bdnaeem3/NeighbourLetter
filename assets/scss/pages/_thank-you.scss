@@ -42,7 +42,7 @@
 // -------------------------------------------------- Congrats Section --------------------
 
 #congrats {
-  @include background('bg/upsell-bottom.png', no-repeat, bottom, contain)
+  @include background('bg/upsell-bottom.png', no-repeat, bottom, 100%)
 }
 
 .congrats {

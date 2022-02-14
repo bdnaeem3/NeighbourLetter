@@ -1,6 +1,6 @@
 #faq-single,
 #faq {
-    @include background('bg/upsell-bottom.png', no-repeat, bottom, cover);
+    @include background('bg/upsell-bottom.png', no-repeat, bottom, 100%);
 }
 
 .faq {

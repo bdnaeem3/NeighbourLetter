@@ -1,5 +1,5 @@
 #contact {
-    @include background('bg/upsell-bottom.png', no-repeat, bottom, cover);
+    @include background('bg/upsell-bottom.png', no-repeat, bottom, 100%);
     margin-top: 120px;
 
     @media (max-width: 991px) {
